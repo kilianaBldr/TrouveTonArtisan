@@ -10,6 +10,10 @@ import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.co
 import { AccessibilitesComponent } from './accessibilites/accessibilites.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
+import { BatimentComponent } from './batiment/batiment.component';
+import { ServicesComponent } from './services/services.component';
+import { FabricationComponent } from './fabrication/fabrication.component';
+import { AlimentaireComponent } from './alimentaire/alimentaire.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-per
     MentionsLegalesComponent,
     AccessibilitesComponent,
     CookiesComponent,
-    DonneesPersonnellesComponent
+    DonneesPersonnellesComponent,
+    BatimentComponent,
+    ServicesComponent,
+    FabricationComponent,
+    AlimentaireComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Graphik";
+    src: url("/src/assets/Fonts/Graphik/Graphik-Regular-Trial.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+}
+body {
+    background-color: #f1f8fc;
+}
