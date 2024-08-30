@@ -1,0 +1,82 @@
+@media (max-width: 425px) { 
+    .container-fluid{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    button { 
+        display: flex;
+     } img { 
+        width: 150px; 
+    } form
+     { width: 300px; 
+    } 
+     select { 
+        width: 100px; 
+    } 
+} 
+@media (min-width: 426px) { 
+    .container-fluid{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    img { 
+        width: 250px; 
+    } form { 
+        width: 350px; 
+    } select { 
+        width: 150px; 
+    }
+ }
+@media (min-width: 1024px) {
+    .container-fluid {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    img { 
+        width: 250px; 
+    } 
+    form { 
+        width: 400px; 
+    } 
+    select { 
+        width: 200px; 
+    }}
+    
+    nav { 
+    background-color: #f1f8fc;
+    border-bottom: 1px solid #0074c7;
+    div {
+      color: white; 
+      font-size: 1.2em;
+    
+      .nav-link {
+        background-color:#f1f8fc;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 30px;
+        color: #0074c7;;
+    }
+      .nav-link:hover {
+         background-color: #0074c7; 
+         color: white; 
+        } form { 
+            margin-left: 50px; 
+        } button 
+            { color: #0074c7; 
+            } .btn:hover { 
+                background-color: #0074c7;
+                 color: #f1f8fc;
+                }
+            } #navbarResponsive { 
+                margin-right: 10px; 
+                margin-left: 10px;
+                .dropdown {
+                    margin-left: 40px;
+                } .btn { 
+                    border-radius: 30px;
+                    background-color: #0074c7;
+                    color: #f1f8fc; }
+                 }
+                
+    }
+
