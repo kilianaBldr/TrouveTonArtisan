@@ -1,4 +1,46 @@
 <main>
-    <p>home works!</p>
+    <section>
+        <div class="explication">
+            <h1 class="text-center">Comment trouver mon artisan ?</h1>
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <ol>
+                      <li>Choisir la catégorie d'artisanat dans le menu.</li>
+                      <li>Choisir un artisan.</li>
+                      <li>Le contacter via le formulaire de contact.</li>
+                      <li>Une réponse sera apportée sous 48h.</li>
+                    </ol>
+                  </div>
+            </div>
+        </div>
 
+        <div class="container mx-auto mt-4 meilleur">
+            <h2 class="text-center">Les trois artisans du mois !</h2>
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                    <div *ngFor="let artisan of topArtisans; let i = index" [ngClass]="{'carousel-item': true, active: i === 0}">
+                        <div class="card w-100 m-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{artisan.name}}</h5>
+                                <p class="card-text">Note : {{artisan.note}} <i class="fa-solid fa-star"></i></p>
+                                <p class="card-text">Spécialité : {{artisan.specialty}}</p>
+                                <p class="card-text">Localisation : {{artisan.location}}</p>
+                                <button (click)="detailArtisan(artisan.id)" type="button" class="btn align-items-center">En Savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 </main>
+  

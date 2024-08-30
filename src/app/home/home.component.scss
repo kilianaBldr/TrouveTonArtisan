@@ -1,0 +1,45 @@
+section {
+    box-sizing: border-box;
+    justify-content: center;
+    .explication {
+        border: 1px solid #00497c;
+        border-radius: 15px;
+        margin: 3rem;
+        padding: 2rem;
+        h1 {
+            color:#00497c;
+        }
+        
+    }
+    .meilleur {
+        height: 50%;
+        h2 { 
+            color: #00497c;
+        }
+            .carousel-item {
+                padding: 1rem;
+                text-align: center;
+                button {
+                    background-color: #00497c;
+                    span {
+                        background-color: black;
+                    }
+                }
+                .card-body {
+                    background-color: #00497c;
+                    color: white;
+                    .btn {
+                        background-color: #f1f8fc;
+                        border-radius: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+ @media (min-width: 994px) {
+    section {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+ }

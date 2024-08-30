@@ -14,6 +14,7 @@ import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentaireComponent } from './alimentaire/alimentaire.component';
+import { TopArtisanPipe } from './top-artisan.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AlimentaireComponent } from './alimentaire/alimentaire.component';
     BatimentComponent,
     ServicesComponent,
     FabricationComponent,
-    AlimentaireComponent
+    AlimentaireComponent,
+    TopArtisanPipe
   ],
   imports: [
     BrowserModule,
