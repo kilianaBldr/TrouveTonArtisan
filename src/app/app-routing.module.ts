@@ -16,6 +16,8 @@ import { AccessibilitesComponent } from './accessibilites/accessibilites.compone
 import { CookiesComponent } from './cookies/cookies.component';
 import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
 
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 const routes: Routes = [
 
   {path:"", component:HomeComponent},
@@ -33,7 +35,7 @@ const routes: Routes = [
   {path: "cookies", component: CookiesComponent},
   {path:"donneesPersonnelles", component:DonneesPersonnellesComponent},
 
-  {path:"**", redirectTo: ''},
+  {path:"**", component: PageNotFoundComponent},
 ];
 
 @NgModule({

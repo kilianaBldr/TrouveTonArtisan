@@ -1,0 +1,49 @@
+@media (max-width:764px) {
+    main {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    main {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+@media (min-width:1024px) {
+    main {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
+
+main {
+    .page-not-found {
+        justify-content: start;
+        text-align: start;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        h1 {
+            font-weight: bold;
+            color: #00497c;
+           
+        } p {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #384050 ;
+            margin-bottom: 5rem;
+        } a {
+            background-color: #0074c7;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                background-color: #00497c;
+                text-decoration: underline;
+            }
+        }
+    }
+}

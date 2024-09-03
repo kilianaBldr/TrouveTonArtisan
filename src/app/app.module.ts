@@ -18,6 +18,7 @@ import { TopArtisanPipe } from './top-artisan.pipe';
 import { DetailArtisanComponent } from './detail-artisan/detail-artisan.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ListeArtisansComponent } from './liste-artisans/liste-artisans.componen
     AlimentaireComponent,
     TopArtisanPipe,
     DetailArtisanComponent,
-    ListeArtisansComponent
+    ListeArtisansComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
