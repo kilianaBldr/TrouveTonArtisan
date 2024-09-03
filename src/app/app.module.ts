@@ -15,6 +15,8 @@ import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentaireComponent } from './alimentaire/alimentaire.component';
 import { TopArtisanPipe } from './top-artisan.pipe';
+import { DetailArtisanComponent } from './detail-artisan/detail-artisan.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,14 @@ import { TopArtisanPipe } from './top-artisan.pipe';
     ServicesComponent,
     FabricationComponent,
     AlimentaireComponent,
-    TopArtisanPipe
+    TopArtisanPipe,
+    DetailArtisanComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //formuaire
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
