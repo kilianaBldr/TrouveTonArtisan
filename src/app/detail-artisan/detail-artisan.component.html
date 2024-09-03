@@ -8,7 +8,7 @@
                     <p class="card-text">Spécialité : {{artisan.specialty}}</p>
                     <p class="card-text">Localisation : {{artisan.location}}</p>
                     <p class="text-start propos">A propos : {{artisan.about}}</p>
-                    <p *ngIf="artisan.website"> <i class="fa-solid fa-globe"></i> <a [href]="artisan.website" target="_blank">{{artisan.website}}</a></p>
+                    <p *ngIf="artisan.website"> <i class="fa-solid fa-globe"></i><a [href]="artisan.website" target="_blank">{{artisan.website}}</a></p>
                     <p *ngIf="!artisan.website">Aucun site web disponible pour cet artisan</p>
                 </div>
             </div>
@@ -23,7 +23,7 @@
 
         <!-- Formulaire de contact -->
          <div class="formulaire d-flex justify-content-center mt-4">
-            <div class="card w-100 p-3 mb-2" style="max-width: 800px;">
+            <div class="card w-100 p-3 mb-2" style="max-width: 1080px;">
                 <h2 class="text-center">Formulaire de Contact</h2>
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
                     <!-- Champ Nom -->
@@ -54,7 +54,7 @@
                     </div>
                     <!-- Bouton de soumission -->
                      <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn">Envoyer</button>
                     </div>
                 </form>
                 <!-- Afficher les messages de succès ou d'erreur -->

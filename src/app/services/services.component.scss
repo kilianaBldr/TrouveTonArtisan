@@ -11,6 +11,12 @@
 
             .card-body {
                 color: white;
+                h2 {
+                    padding-bottom: 1rem;
+                }
+                p {
+                    padding-bottom: 0.2rem;
+                }
                 button {
                     border-radius: 20px;
                     background-color: #f1f8fc;

@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { artisan, ArtisansDataServiceService } from '../artisans-data-service.service';
 //Formulaire
@@ -21,7 +21,7 @@ export class DetailArtisanComponent implements OnInit{
 
   
 
-  constructor(private route: ActivatedRoute,
+  constructor(private route: ActivatedRoute,private router: Router,
     private ArtisanDataServices: ArtisansDataServiceService, private fb:FormBuilder) {
 
       //form
@@ -35,6 +35,10 @@ export class DetailArtisanComponent implements OnInit{
       const id = this.route.snapshot.paramMap.get('id');
       if (id) {this.artisan = this.ArtisanDataServices.getArtisanId(id);
       }
+    }
+    //button detail
+    viewDetails(id:string) {
+      this.router.navigate(['/artisan',id])
     }
     //form
     onSubmit(): void {

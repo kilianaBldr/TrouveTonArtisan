@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 
+// rajout liste artisan
+import { Observable, of } from 'rxjs';
+
 export interface artisan{
   id: string;
   name: string;
@@ -235,8 +238,9 @@ export class ArtisansDataServiceService {
   getArtisanId(id: string): artisan | undefined {
     return this.artisans.find(artisans => artisans.id === id);
   }
-  getArtisans(): artisan[]{
-    return this.artisans;
+  getArtisans(): 
+  Observable<artisan[]> {
+    return of (this.artisans);
   }
   getTopArtisans(): artisan[] { 
     return this.artisans.filter(artisan => artisan.top) //filtre les artisans avec top = true

@@ -8,6 +8,7 @@ import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentaireComponent } from './alimentaire/alimentaire.component';
 
+import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
 import { DetailArtisanComponent } from './detail-artisan/detail-artisan.component';
 
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:"fabrication", component: FabricationComponent},
   {path:"alimentaire", component: AlimentaireComponent},
 
+  {path:"artisans", component: ListeArtisansComponent},
   {path:"artisan/:id" , component: DetailArtisanComponent},
 
   {path:"mentionsLegales", component: MentionsLegalesComponent},

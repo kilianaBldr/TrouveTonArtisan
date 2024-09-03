@@ -17,6 +17,7 @@ import { AlimentaireComponent } from './alimentaire/alimentaire.component';
 import { TopArtisanPipe } from './top-artisan.pipe';
 import { DetailArtisanComponent } from './detail-artisan/detail-artisan.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FabricationComponent,
     AlimentaireComponent,
     TopArtisanPipe,
-    DetailArtisanComponent
+    DetailArtisanComponent,
+    ListeArtisansComponent
   ],
   imports: [
     BrowserModule,
