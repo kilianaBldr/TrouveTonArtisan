@@ -33,7 +33,10 @@ export class DetailArtisanComponent implements OnInit{
     }
     ngOnInit() {
       const id = this.route.snapshot.paramMap.get('id');
-      if (id) {this.artisan = this.ArtisanDataServices.getArtisanId(id);
+      if (id) { 
+        this.ArtisanDataServices.getArtisanId(id).subscribe((data: artisan | undefined) => {
+          this.artisan = data;
+        });
       }
     }
     //button detail

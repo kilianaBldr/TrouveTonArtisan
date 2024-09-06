@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { artisan, ArtisansDataServiceService } from '../artisans-data-service.service';
 
@@ -10,7 +9,8 @@ import { artisan, ArtisansDataServiceService } from '../artisans-data-service.se
   styleUrl: './liste-artisans.component.scss'
 })
 export class ListeArtisansComponent implements OnInit {
-artisans: artisan[] = [];
+  
+  artisans: artisan[] = [];
 
 constructor(private ArtisansDataServices: ArtisansDataServiceService,
   private router: Router, ) { }
@@ -20,6 +20,8 @@ ngOnInit(): void {
     this.artisans = data;
   });
 }
+
+
 
 viewDetails(id: string) {
   this.router.navigate(['/artisan', id]);

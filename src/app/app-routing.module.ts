@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
+import { RechercheResultsComponent } from './recherche-results/recherche-results.component';
+
 import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
@@ -21,6 +23,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
 
   {path:"", component:HomeComponent},
+//recherche resultatpage 
+  {path:"search", component: RechercheResultsComponent},
 
   {path:"batiment", component: BatimentComponent},
   {path:"services", component: ServicesComponent},

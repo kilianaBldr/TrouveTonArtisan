@@ -235,17 +235,29 @@ export class ArtisansDataServiceService {
   //retour un tableau vide si aucun artisans et trouver
   return filteredArtisans;
   }
-  getArtisanId(id: string): artisan | undefined {
-    return this.artisans.find(artisans => artisans.id === id);
-  }
   getArtisans(): 
   Observable<artisan[]> {
     return of (this.artisans);
+  }
+  getArtisanId(id: string): 
+  Observable< artisan | undefined > {
+    const artisan = this.artisans.find(a => a.id === id);
+    return of (artisan);
   }
   getTopArtisans(): artisan[] { 
     return this.artisans.filter(artisan => artisan.top) //filtre les artisans avec top = true
     .sort((a, b) => parseFloat(b.note) - parseFloat(a.note)) //converti la note en nombre
     .slice(0.3); 
+  }
+  //recherche
+  searchArtisans(query: string) {
+    query = query.toLowerCase();
+    return of ( this.artisans.filter (artisan => 
+      artisan.name.toLowerCase().includes(query) ||
+      artisan.specialty.toLowerCase().includes(query) ||
+      artisan.location.toLowerCase().includes(query)
+    )
+  );
   }
   setArtisanId(id: string) {
     this.ArtisanId = id ;

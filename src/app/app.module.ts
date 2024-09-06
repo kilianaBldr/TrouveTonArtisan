@@ -16,9 +16,11 @@ import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentaireComponent } from './alimentaire/alimentaire.component';
 import { TopArtisanPipe } from './top-artisan.pipe';
 import { DetailArtisanComponent } from './detail-artisan/detail-artisan.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ArtisansDataServiceService } from './artisans-data-service.service';
+import { RechercheResultsComponent } from './recherche-results/recherche-results.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +40,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DetailArtisanComponent,
     ListeArtisansComponent,
     PageNotFoundComponent,
+    RechercheResultsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //formuaire
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //Nav'Recherche'
+    FormsModule
   ],
-  providers: [],
+  providers: [ArtisansDataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

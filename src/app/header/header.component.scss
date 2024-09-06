@@ -7,10 +7,6 @@
         display: flex;
      } img { 
         width: 150px; 
-    } form {
-        width: 300px; 
-    } select { 
-        width: 100px; 
     } 
 } 
 @media (min-width: 426px) { 
@@ -20,11 +16,7 @@
     }
     img { 
         width: 250px; 
-    } form { 
-        width: 350px; 
-    } select { 
-        width: 150px; 
-    }
+    } 
  }
 @media (min-width: 1024px) {
     .container-fluid {
